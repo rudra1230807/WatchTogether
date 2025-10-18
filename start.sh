@@ -1,6 +1,12 @@
 #!/bin/bash
-# Install dependencies first
+
+# Activate virtual environment
+source ./.venv/bin/activate
+
+# Upgrade pip (optional)
 pip install --upgrade pip
+
+# Install dependencies
 pip install -r requirements.txt
 
 # Start FastAPI in background
