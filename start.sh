@@ -1,4 +1,7 @@
 #!/bin/bash
+# Install dependencies first
+pip install --upgrade pip
+pip install -r requirements.txt
 
 # Start FastAPI in background
 uvicorn server:app --host 0.0.0.0 --port 8000 &
